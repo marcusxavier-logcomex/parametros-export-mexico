@@ -331,7 +331,7 @@
           "es": "Pedimento"
         }
       },
-      "type": "autocomplete-multiple",
+      "type": "multiple-text-filter",
       "expanded": false,
       "fields": [
         {
