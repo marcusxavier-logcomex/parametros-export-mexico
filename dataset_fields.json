@@ -1,0 +1,1193 @@
+[
+  {
+    "name": "id",
+    "label": {
+      "en": "id",
+      "pt": "id",
+      "es": "id"
+    },
+    "description": "id",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "dispatch_month",
+    "label": {
+      "en": "Year/Month",
+      "pt": "Ano/Mes",
+      "es": "Año/Mes"
+    },
+    "description": "Ano/Mes",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "date",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "dispatch_date",
+    "label": {
+      "en": "Arrival Date",
+      "pt": "Data de Chegada",
+      "es": "Fecha de llegada"
+    },
+    "description": "Data de Chegada",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "date",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "importer_name",
+    "label": {
+      "en": "Importer",
+      "pt": "Importador",
+      "es": "Importador"
+    },
+    "description": "Importador",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true,
+    "workspace_field_priority": 1
+  },
+  {
+    "name": "importer_address",
+    "label": {
+      "en": "Importer Address",
+      "pt": "Endereço do Consignatário",
+      "es": "Dirección del Consignatario"
+    },
+    "description": "Importador",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "supplier_name",
+    "label": {
+      "en": "Probable Shipper",
+      "pt": "Provável Exportador ",
+      "es": "Probable Exportador"
+    },
+    "description": "Exportador",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "supplier_address",
+    "label": {
+      "en": "Shipper Address",
+      "pt": "Endereço do Exportador",
+      "es": "Dirección del Exportador"
+    },
+    "description": "Exportador",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "origin_destination_country",
+    "label": {
+      "en": "Origin Country",
+      "pt": "Pais de Origem",
+      "es": "País de Origen"
+    },
+    "description": "Pais de Origem",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "buyer_seller_country",
+    "label": {
+      "en": "Provenance Country",
+      "pt": "País de Procedência",
+      "es": "País de Procedencia"
+    },
+    "description": "Pais de aquisição",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "arrival_transport",
+    "label": {
+      "en": "Modal (Transport)",
+      "pt": "Modais",
+      "es": "Modales"
+    },
+    "description": "Modais",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "naladi",
+    "label": {
+      "en": "NALADI",
+      "pt": "NALADI",
+      "es": "NALADI"
+    },
+    "description": "NALADI",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "hscode",
+    "label": {
+      "en": "HS Code",
+      "pt": "HS Code",
+      "es": "HS Code"
+    },
+    "description": "HS Code",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "goods_description",
+    "label": {
+      "en": "HS CODE Description",
+      "pt": "Descrição HS CODE",
+      "es": "Descripción HS CODE"
+    },
+    "description": "Descrição HS CODE",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "gross_weight",
+    "label": {
+      "en": "Weight (KG)",
+      "pt": "Peso (KG)",
+      "es": "Peso (KG)"
+    },
+    "description": "Peso (KG)",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "usd_value",
+    "label": {
+      "en": "Value (USD)",
+      "pt": "Valor (USD)",
+      "es": "Valor (USD)"
+    },
+    "description": "Valor (USD)",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "mxn_value",
+    "label": {
+      "en": "Value (MXN)",
+      "pt": "Valor (MXN)",
+      "es": "Valor (MXN)"
+    },
+    "description": "Valor (MXN)",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "statistical_quantity",
+    "label": {
+      "en": "Statistical Quantity",
+      "pt": "Quantidade estatística ",
+      "es": "Cantidad estadística"
+    },
+    "description": "Quantidade estatistica",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "commercial_quantity",
+    "label": {
+      "en": "Commercial Quantity",
+      "pt": "Quantidade comercializada",
+      "es": "Cantidad comercializada"
+    },
+    "description": "Quantidade comercializada",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "commercial_measure_unity",
+    "label": {
+      "en": "Unit of Measure",
+      "pt": "Unidade de Medida Comercializada",
+      "es": "Unidad de Medida Comercializada"
+    },
+    "description": "Unidade de Medida Comercializada",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "declaration_number",
+    "label": {
+      "en": "Declared Document",
+      "pt": "Documento Declarado",
+      "es": "Documento Declarado"
+    },
+    "description": "id",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "un_usd_value",
+    "label": {
+      "en": "UN USD Value",
+      "pt": "Valor Unitário USD",
+      "es": "Valor Unitario USD"
+    },
+    "description": "Valor Unitário USD",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "goods_insurance_usd_value",
+    "label": {
+      "pt": "Valor de Seguro USD",
+      "en": "USD Value of Goods Insurance",
+      "es": "Valor de Seguro USD"
+    },
+    "description": "Valor de Seguro USD",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_freight_usd_value",
+    "label": {
+      "pt": "Valor de Frete USD",
+      "en": "USD Value of Goods Freight",
+      "es": "Valor de Frete USD"
+    },
+    "description": "Valor de Frete USD",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "un_gross_weight",
+    "label": {
+      "pt": "Peso Unitário (KG)",
+      "en": "UN Gross Weight (KG)",
+      "es": "Peso Unitario (KG)"
+    },
+    "description": "Peso Unitário (KG)",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "desc_hs_code_es",
+    "label": {
+      "pt": "DESCRIÇÃO DA MERCADORIA (ES)",
+      "en": "GOODS DESCRIPTION (ES)",
+      "es": "DESCRIÇÃO DA MERCADORIA (ES)"
+    },
+    "description": "Descrição da mercadoria em Espanhol",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "desc_hs_code_en",
+    "label": {
+      "pt": "DESCRIÇÃO DA MERCADORIA (EN)",
+      "en": "GOODS DESCRIPTION (EN)",
+      "es": "DESCRIÇÃO DA MERCADORIA (EN)"
+    },
+    "description": "Descrição da mercadoria em Inglês",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "hscode_subdivision",
+    "label": {
+      "en": "NICO",
+      "pt": "NICO",
+      "es": "NICO"
+    },
+    "description": "Número identificador de 2 dígitos referente ao NICO. ",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "statistical_measure_unity",
+    "label": {
+      "pt": "Unidade de Medida Estatística",
+      "en": "Statistical Measure Unity",
+      "es": "Unidad de Medida Estadística"
+    },
+    "description": "Unidade de medida utilizada para declaração de quantidade estatística.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "dispatch_customs",
+    "label": {
+      "pt": "ADUANA DE DESPACHO",
+      "en": "CUSTOMS CLEARANCE",
+      "es": "ADUANA DE DESPACHO"
+    },
+    "description": "Aduana de despacho.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "entry_customs",
+    "label": {
+      "pt": "ADUANA DE ENTRADA",
+      "en": "ENTRY CUSTOMS",
+      "es": "ADUANA DE ENTRADA"
+    },
+    "description": "Aduana de entrada.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "subdivision_description",
+    "label": {
+      "en": "NICO DESCRIPTION",
+      "pt": "DESCRIÇÃO NICO",
+      "es": "DESCRIPCIÓN NICO"
+    },
+    "description": "Descrição do NICO.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "added_mxn_value",
+    "label": {
+      "pt": "VALOR AGREGADO DECLARADO DO ITEM",
+      "en": "DECLARED AGGREGATED ITEM VALUE",
+      "es": "VALOR AGREGADO DECLARADO DO ITEM"
+    },
+    "description": "Valor agregado declarado dos ítens da partida.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "custom_broker_id",
+    "label": {
+      "pt": "Patente do Agente Aduanal",
+      "en": "Patent of the Customs Agent",
+      "es": "Patente del Agente Aduanal"
+    },
+    "description": "Número identificador do agente aduaneiro.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "customs_mxn_value",
+    "label": {
+      "pt": "VALOR ITEM MXN",
+      "en": "ITEM VALUE MXN",
+      "es": "VALOR ITEM MXN"
+    },
+    "description": "Valor dos ítens da partida declarado na aduana, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "customs_regime",
+    "label": {
+      "pt": "REGIME ADUANEIRO",
+      "en": "CUSTOMS REGIME",
+      "es": "REGIME ADUANEIRO"
+    },
+    "description": "Descrição do enquadramento da operação.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "customs_regime_id",
+    "label": {
+      "pt": "ID REGIME ADUANEIRO",
+      "en": "CUSTOMS ID REGIME",
+      "es": "ID REGIME ADUANEIRO"
+    },
+    "description": "Enquadramento da operação.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "declaration_type",
+    "label": {
+      "pt": "TIPO DE DECLARAÇÃO",
+      "en": "DECLARATION TYPE",
+      "es": "TIPO DE DECLARAÇÃO"
+    },
+    "description": "Se é um pedimento normal ou retificado.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_deductions_mxn_value",
+    "label": {
+      "pt": "VALOR TOTAL DEDUÇÕES MXN",
+      "en": "TOTAL VALUE DEDUCTIONS MXN",
+      "es": "VALOR TOTAL DEDUÇÕES MXN"
+    },
+    "description": "Valor total de deduções de todo os ítens da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_additions_mxn_value",
+    "label": {
+      "pt": "VALOR TOTAL ADIÇÕES MXN",
+      "en": "TOTAL VALUE ADDITIONS MXN",
+      "es": "VALOR TOTAL ADIÇÕES MXN"
+    },
+    "description": "Valor total de adições de todo os ítens da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_freight_mxn_value",
+    "label": {
+      "pt": "VALOR TOTAL FRETE MXN",
+      "en": "TOTAL FREIGHT VALUE MXN",
+      "es": "VALOR TOTAL FRETE MXN"
+    },
+    "description": "Valor total pago em frete de todo os ítens da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_goods_mxn_value",
+    "label": {
+      "pt": "VALOR TOTAL DE MERCADORIAS MXN",
+      "en": "TOTAL GOODS VALUE MXN",
+      "es": "VALOR TOTAL DE MERCADORIAS MXN"
+    },
+    "description": "Valor total de todas as mercadorias da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_goods_usd_value",
+    "label": {
+      "pt": "VALOR TOTAL DAS MERCADORIAS USD",
+      "en": "TOTAL GOODS VALUE USD",
+      "es": "VALOR TOTAL DAS MERCADORIAS USD"
+    },
+    "description": "Valor total de todas as mercadorias da partida, em dólares.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_gross_weight",
+    "label": {
+      "pt": "PESO BRUTO KG",
+      "en": "GROSS WEIGHT KG",
+      "es": "PESO BRUTO KG"
+    },
+    "description": "Valor total de peso bruto de todo os ítens da partida, kg.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_insurance_mxn_value",
+    "label": {
+      "pt": "VALOR TOTAL SEGURO MXN",
+      "en": "TOTAL ENSURANCE VALUE MXN",
+      "es": "VALOR TOTAL SEGURO MXN"
+    },
+    "description": "Valor total pago em seguros de todo os ítens da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_packages_quantity",
+    "label": {
+      "pt": "QUANTIDADE TOTAL DE PACOTES",
+      "en": "PACKAGES TOTAL QUANTITY",
+      "es": "QUANTIDADE TOTAL DE PACOTES"
+    },
+    "description": "Quantidade total de pacotes de todo os ítens da partida.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "departure_transport",
+    "label": {
+      "pt": "MEIO TRANSPORTE (SAÍDA)",
+      "en": "DEPARTURE TRANSPORT",
+      "es": "MEIO TRANSPORTE (SAÍDA)"
+    },
+    "description": "Meio de transporte de saída na aduana de despacho.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "dispatch_customs_state",
+    "label": {
+      "pt": "ESTADO DA ADUANA DE DESPACHO",
+      "en": "DISPATCH CUSTOMS STATE",
+      "es": "ESTADO DA ADUANA DE DESPACHO"
+    },
+    "description": "Estado da aduana de despacho.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "entry_exit_transport",
+    "label": {
+      "pt": "MEIO DE TRANSPORTE (CHEGADA/SAÍDA)",
+      "en": "ENTRY/DEPARTURE TRANSPORT",
+      "es": "MEIO DE TRANSPORTE (CHEGADA/SAÍDA)"
+    },
+    "description": "Meio de transporte de chegada ou saída. Caso seja um registro de importação, é o meio de transporte de chegada, caso contrário, é o meio de transporte de saída.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "export_taxes_percent",
+    "label": {
+      "pt": "PERCENTUAL DE IMPOSTOS DE EXPORTAÇÃO",
+      "en": "EXPORT TAXES PERCENT",
+      "es": "PERCENTUAL DE IMPOSTOS DE EXPORTAÇÃO"
+    },
+    "description": "Porcentagem à ser paga em casos de exportação desse ítem, segundo as LIGIE.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_brand",
+    "label": {
+      "pt": "MARCA DO PRODUTO",
+      "en": "PRODUCT BRAND",
+      "es": "MARCA DO PRODUTO"
+    },
+    "description": "Marca declarada dos produtos.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_destination",
+    "label": {
+      "pt": "DESTINO DA MERCADORIA",
+      "en": "GOODS DESTINATION",
+      "es": "DESTINO DA MERCADORIA"
+    },
+    "description": "Região de destino da mercadorias (Fronteira norte, Fronteira Sul, Interior do país, etc).",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_freight_mxn_value",
+    "label": {
+      "pt": "VALOR DE FRETE DA MERCADORIA (MXN)",
+      "en": "GOODS FREIGHT VALUE (MXN)",
+      "es": "VALOR DE FRETE DA MERCADORIA (MXN)"
+    },
+    "description": "Valor estimado de frete da mercadoria da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_insurance_mxn_value",
+    "label": {
+      "pt": "VALOR DO SEGURO DA MERCADORIA (MXN)",
+      "en": "GOODS INSURANCE VALUE (MXN)",
+      "es": "VALOR DO SEGURO DA MERCADORIA (MXN)"
+    },
+    "description": "Valor estimado de seguro da mercadoria da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_model",
+    "label": {
+      "pt": "MODELO DO PRODUTO",
+      "en": "PRODUCT MODEL",
+      "es": "MODELO DO PRODUTO"
+    },
+    "description": "Modelo declarado dos produtos.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "hscode_sequence",
+    "label": {
+      "pt": "SEQUÊNCIA HS CODE",
+      "en": "HS CODE SEQUENCE",
+      "es": "SEQUÊNCIA HS CODE"
+    },
+    "description": "Sequência do código harmonizado, utilizado pela ANAM para identificar qual sequência se refere à partida.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "import_taxes_percent",
+    "label": {
+      "pt": "PERCENTUAL DE IMPOSTOS DE IMPORTAÇÃO",
+      "en": "IMPORT TAXES PERCENT",
+      "es": "PERCENTUAL DE IMPOSTOS DE IMPORTAÇÃO"
+    },
+    "description": "Porcentagem à ser paga em casos de importação desse ítem, segundo as LIGIE.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "importer_id",
+    "label": {
+      "pt": "RFC",
+      "en": "RFC",
+      "es": "RFC"
+    },
+    "description": "Número identificador único do importador, segundo IMEXDB.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "incoterm",
+    "label": {
+      "en": "INCOTERM",
+      "pt": "INCOTERM",
+      "es": "INCOTERM"
+    },
+    "description": "Incoterm utilizado entre as partes da operação.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  },
+  {
+    "name": "nom_1",
+    "label": {
+      "en": "NORM 1",
+      "pt": "NORMA 1",
+      "es": "NORMA 1"
+    },
+    "description": "Normas aplicadas ao ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "nom_2",
+    "label": {
+      "en": "NORM 2",
+      "pt": "NORMA 2",
+      "es": "NORMA 2"
+    },
+    "description": "Normas aplicadas ao ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "nom_3",
+    "label": {
+      "en": "NORM 3",
+      "pt": "NORMA 3",
+      "es": "NORMA 3"
+    },
+    "description": "Normas aplicadas ao ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "exclusions_1",
+    "label": {
+      "en": "EXCEPTION NORM 1",
+      "pt": "EXCEÇÃO NORMA 1",
+      "es": "EXCEPCIÓN NORMA 1"
+    },
+    "description": "Exceções às normas do ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "exclusions_2",
+    "label": {
+      "en": "EXCEPTION NORM 2",
+      "pt": "EXCEÇÃO NORMA 2",
+      "es": "EXCEPCIÓN NORMA 2"
+    },
+    "description": "Exceções às normas do ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "exclusions_3",
+    "label": {
+      "en": "EXCEPTION NORM 3",
+      "pt": "EXCEÇÃO NORMA 3",
+      "es": "EXCEPCIÓN NORMA 3"
+    },
+    "description": "Exceções às normas do ítem da partida, podendo haver mais de uma, separados por “|”.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "operation_type",
+    "label": {
+      "pt": "TIPO DE OPERAÇÃO",
+      "en": "OPERATION TYPE",
+      "es": "TIPO DE OPERAÇÃO"
+    },
+    "description": "Tipo de operação (Importação ou Exportação).",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "supplier_id",
+    "label": {
+      "pt": "ID DO FORNECEDOR",
+      "en": "SUPPLIER ID",
+      "es": "ID DO FORNECEDOR"
+    },
+    "description": "Número identificador único do fornecedor, segundo IMEXDB.",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "un_mxn_value",
+    "label": {
+      "pt": "VALOR UNITÁRIO (MXN)",
+      "en": "UNIT VALUE (MXN)",
+      "es": "VALOR UNITÁRIO (MXN)"
+    },
+    "description": "Valor unitário dos ítens da partida, em pesos mexicanos.",
+    "used_on_side_filter": [],
+    "used_on_details": false,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": "",
+    "type": "number",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_full_description_es",
+    "label": {
+      "pt": "DESCRIÇÃO COMPLETA DA MERCADORIA",
+      "en": "Goods complete description",
+      "es": "Descriccion completa de la mercadoria"
+    },
+    "description": "DESCRIÇÃO COMPLETA DA MERCADORIA",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": false,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "goods_standart_description_es",
+    "label": {
+      "pt": "Descrição da mercadoria",
+      "en": "Goods description",
+      "es": "Descriccion de la mercadoria"
+    },
+    "description": "Descrição da mercadoria",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": false,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": false
+  },
+  {
+    "name": "hs10",
+    "label": {
+      "pt": "HS Code/Nico",
+      "en": "HS Code/Nico",
+      "es": "HS Code/Nico"
+    },
+    "description": "Nico (10 dígitos)",
+    "used_on_side_filter": [],
+    "used_on_details": true,
+    "used_on_excel": true,
+    "used_on_charts": true,
+    "elastic_rule": ".keyword",
+    "type": "string",
+    "show": "true",
+    "workspace": true
+  }
+]

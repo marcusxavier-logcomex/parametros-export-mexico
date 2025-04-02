@@ -1,0 +1,409 @@
+{
+  "title": "Filtros",
+  "saveFilterLabel": "Seus filtros salvos",
+  "saveFilterActionText": "Salvar Filtro",
+  "clearAllFilters": "Limpar todos os filtros",
+  "filterButtonText": "Filtrar",
+  "directSearch": true,
+  "minimumSearchIntervalPeriodInDays": 0,
+  "translation": {
+    "title": {
+      "pt": "Filtros",
+      "en": "Filters",
+      "es": "Filtros"
+    },
+    "saveFilterLabel": {
+      "en": "Your saved filters",
+      "pt": "Seus filtros salvos",
+      "es": "Filtros guardados"
+    },
+    "saveFilterActionText": {
+      "pt": "Salvar Filtros",
+      "en": "Save Filters",
+      "es": "Guardar Filtros"
+    },
+    "errorMessage": {
+      "pt": "Esse filtro já existe",
+      "en": "This filter already exist",
+      "es": "Este filtro ya existe"
+    },
+    "clearAllFilters": {
+      "pt": "Limpar todos os filtros",
+      "en": "Clear All Filters",
+      "es": "Limpiar todos los filtros"
+    },
+    "filterButtonText": {
+      "pt": "Filtrar",
+      "en": "Filter",
+      "es": "Filtrar"
+    }
+  },
+  "columns": [
+    {
+      "translation": {
+        "title": {
+          "pt": "Período",
+          "en": "Period",
+          "es": "Período"
+        }
+      },
+      "type": "datepicker",
+      "expanded": true,
+      "fields": [
+        {
+          "limitOnPresetDates": true,
+          "dataset_bind": "dispatch_date",
+          "rule": "date_range",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Aduana de entrada",
+          "en": "Entry Customs",
+          "es": "Aduana de entrada"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "entry_customs",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Aduana de despacho",
+          "en": "Dispatch Customs",
+          "es": "Aduana de despacho"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "dispatch_customs",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "HS Code",
+          "en": "HS Code",
+          "es": "Fracción Arrancelaria | HS Code"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "hs10",
+          "uppercase_value": false,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ],
+      "tooltipData": {
+        "es": "De 4 a 10 dígitos",
+        "pt": "De 4 a 10 dígitos",
+        "en": "From 4 to 10 digits"
+      }
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Descrição da Mercadoria",
+          "en": "Product Description",
+          "es": "Descripción del Producto"
+        }
+      },
+      "type": "multiple-text-filter",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "goods_full_description_es",
+          "uppercase_value": false,
+          "rule": "contains",
+          "rule_type": "match_phrase",
+          "elastic_rule": "",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Importador",
+          "en": "Consignee",
+          "es": "Importador"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "importer_name",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "RFC",
+          "en": "RFC",
+          "es": "RFC"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "importer_id",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Exportador ",
+          "en": "Exporter",
+          "es": "Exportador"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "supplier_name",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Patente Aduanal",
+          "en": "Customs Broker",
+          "es": "Patente Aduanal"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "custom_broker_id",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Pais de Origem",
+          "en": "Origin Country",
+          "es": "País de Origen"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "origin_destination_country",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "País de Procedência",
+          "en": "Acquisition Country",
+          "es": "País de Procedencia"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "buyer_seller_country",
+          "uppercase_value": true,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Modal",
+          "en": "Transport Mode",
+          "es": "Medio de Transporte"
+        }
+      },
+      "tooltipData": {
+        "pt": "Último modal de transporte declarado na aduana de despacho",
+        "en": "Last transport mode declared in dispatch customs",
+        "es": "Último medio de transporte declarado en la aduana de despacho"
+      },
+      "type": "CheckboxFilter",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "arrival_transport",
+          "rule": "contains",
+          "rule_type": "prefix",
+          "options": {
+            "en": [
+              "MARITIMO",
+              "AEREO",
+              "CARRETERO",
+              "FERROVIARIO",
+              "DUCTO"
+            ],
+            "pt": [
+              "MARITIMO",
+              "AEREO",
+              "CARRETERO",
+              "FERROVIARIO",
+              "DUCTO"
+            ],
+            "es": [
+              "MARITIMO",
+              "AEREO",
+              "CARRETERO",
+              "FERROVIARIO",
+              "DUCTO"
+            ]
+          },
+          "flags": [],
+          "elastic_rule": ".keyword"
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Pedimento",
+          "en": "Pedimento",
+          "es": "Pedimento"
+        }
+      },
+      "type": "autocomplete-multiple",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "declaration_number",
+          "uppercase_value": false,
+          "rule": "contains",
+          "rule_type": "prefix",
+          "elastic_rule": ".keyword",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "translation": {
+        "title": {
+          "pt": "Incoterm",
+          "en": "Incoterm",
+          "es": "Incoterm"
+        }
+      },
+      "type": "CheckboxFilter",
+      "expanded": false,
+      "fields": [
+        {
+          "dataset_bind": "incoterm",
+          "rule": "contains",
+          "rule_type": "prefix",
+          "options": {
+            "en": [
+              "CIP",
+              "FCA",
+              "FOB",
+              "CFR",
+              "CIF",
+              "EXW",
+              "DDP",
+              "CPT",
+              "DPU",
+              "DDU",
+              "DAT"
+            ],
+            "pt": [
+              "CIP",
+              "FCA",
+              "FOB",
+              "CFR",
+              "CIF",
+              "EXW",
+              "DDP",
+              "CPT",
+              "DPU",
+              "DDU",
+              "DAT"
+            ],
+            "es": [
+              "CIP",
+              "FCA",
+              "FOB",
+              "CFR",
+              "CIF",
+              "EXW",
+              "DDP",
+              "CPT",
+              "DPU",
+              "DDU",
+              "DAT"
+            ]
+          },
+          "flags": [],
+          "elastic_rule": ".keyword"
+        }
+      ]
+    }
+  ]
+}
