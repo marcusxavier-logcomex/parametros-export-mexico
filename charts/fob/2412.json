@@ -1,0 +1,270 @@
+{
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE",
+    "#C6A1F6",
+    "#C00BAE",
+    "#F00ED9",
+    "#F99EF0",
+    "#E57400",
+    "#FFA74C"
+  ],
+  "fields": [
+    "importer_name",
+    "usd_value"
+  ],
+  "group_by": [
+    {
+      "field": "usd_value",
+      "aggregation": "sum"
+    }
+  ],
+  "per_page": 100,
+  "formatter": {
+    "type": "currency",
+    "showFractionalDigits": false,
+    "fractionalDigitsLength": 2
+  },
+  "chart_bind": {
+    "main_label": "data/importer_name",
+    "progress_bar": "data/importer_name__usd_value__percentage",
+    "quick_filter": "paramsdata/quickFilter/importer_name",
+    "others_action": "translation/seeMore",
+    "column_ranking": "data/importer_name__ranking",
+    "others_main_label": "translation/othersMainLabel",
+    "others_main_value": "summary/remaining/count",
+    "full_list_column_1": "data/index",
+    "full_list_column_2": "data/importer_name",
+    "full_list_column_3": "data/importer_name__usd_value",
+    "full_list_column_4": "data/importer_name__usd_value__percentage",
+    "full_list_header_1": "translation/header1",
+    "full_list_header_2": "translation/header2",
+    "full_list_header_3": "translation/header3",
+    "full_list_header_4": "translation/header4",
+    "full_list_reorder_2": "reorderFields/field",
+    "full_list_reorder_3": "reorderFields/aggregation",
+    "full_list_tooltip_1": "translation/tooltip_1",
+    "full_list_tooltip_4": "translation/tooltip_4",
+    "others_progress_bar": "summary/remaining/importer_name__usd_value__percentage",
+    "additional_info_label_1": "translation/firstColumn",
+    "additional_info_label_2": "translation/secondColumn",
+    "additional_info_value_1": "data/importer_name__usd_value",
+    "additional_info_value_2": "data/importer_name__usd_value__percentage",
+    "others_additional_info_label_1": "translation/firstColumn",
+    "others_additional_info_label_2": "translation/secondColumn",
+    "others_additional_info_value_1": "summary/remaining/importer_name__count",
+    "others_additional_info_value_2": "summary/remaining/importer_name__usd_value__percentage"
+  },
+  "shard_size": 10,
+  "treatItems": {
+    "hideShare": [
+      "NO INFORMADO"
+    ],
+    "moveToEnd": [
+      "NO INFORMADO"
+    ],
+    "hideProgressLine": [
+      "NO INFORMADO"
+    ]
+  },
+  "max_results": 10000,
+  "quickFilter": {
+    "importer_name": {
+      "enabled": "true",
+      "bindFilter": {
+        "en": "importer_name",
+        "es": "importer_name",
+        "pt": "importer_name"
+      },
+      "translation": {
+        "question_add": {
+          "en": "Would you like to filter by possible importer [BIND_FIELD_VALUE]?",
+          "es": "¿Le gustaría filtrar por el posible importer_name [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de filtrar pelo provável importer_name [BIND_FIELD_VALUE]?"
+        },
+        "observation_add": {
+          "en": "A new query will be applied",
+          "es": "Se aplicará una nueva consulta",
+          "pt": "Uma nova consulta será aplicada"
+        },
+        "question_remove": {
+          "en": "Would you like to remove the filter by possible importer [BIND_FIELD_VALUE]?",
+          "es": "¿Le gustaría eliminar el filtro por el posible importer_name [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de remover o filtro pelo provável importer_name [BIND_FIELD_VALUE]?"
+        },
+        "observation_remove": {
+          "en": "A new query will be applied",
+          "es": "Se aplicará una nueva consulta",
+          "pt": "Uma nova consulta será aplicada"
+        }
+      },
+      "dynamicTarget": "full_list_column_2"
+    }
+  },
+  "translation": {
+    "title": {
+      "en": "Ranking of Probable Importers",
+      "es": "Ranking de Posibles Importadores",
+      "pt": "Ranking dos Prováveis Importadores"
+    },
+    "value": {
+      "en": "FOB (USD)",
+      "es": "FOB (USD)",
+      "pt": "FOB (USD)"
+    },
+    "others": {
+      "en": "OTHERS",
+      "es": "OTROS",
+      "pt": "OUTROS"
+    },
+    "header1": {
+      "en": "Position",
+      "es": "Posición",
+      "pt": "Posição"
+    },
+    "header2": {
+      "en": "Companies",
+      "es": "Empresas",
+      "pt": "Empresas"
+    },
+    "header3": {
+      "en": "FOB (USD)",
+      "es": "FOB (USD)",
+      "pt": "FOB (USD)"
+    },
+    "header4": {
+      "en": "FOB Share",
+      "es": "Participación de FOB",
+      "pt": "Share de FOB"
+    },
+    "records": {
+      "en": "FOB Share",
+      "es": "Participación de FOB",
+      "pt": "Share de FOB"
+    },
+    "seeMore": {
+      "en": "View more",
+      "es": "Ver más",
+      "pt": "Ver mais"
+    },
+    "subtitle": {
+      "en": "Probable importers with the highest FOB (USD) for your research",
+      "es": "Importadores probables con mayor FOB (USD) para su búsqueda",
+      "pt": "Prováveis Importadores com maior FOB (USD) para sua pesquisa"
+    },
+    "tooltip_1": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "tooltip_4": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "firstColumn": {
+      "en": "Weight: ",
+      "es": "Peso: ",
+      "pt": "Peso: "
+    },
+    "othersAction": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    },
+    "secondColumn": {
+      "en": "Weight Share: ",
+      "es": "Participación de Peso: ",
+      "pt": "Share de Peso: "
+    },
+    "othersMainLabel": {
+      "en": "Others",
+      "es": "Otros",
+      "pt": "Outros"
+    },
+    "cardActionButton": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "importer_name.keyword",
+      "order_by": {
+        "usd_value": "desc"
+      },
+      "aggregation": "terms"
+    }
+  ],
+  "columnsWidth": [
+    15,
+    45,
+    20,
+    20
+  ],
+  "reorderFields": {
+    "field": "fieldName",
+    "aggregation": "__sort"
+  },
+  "torettoFields": {
+    "dynamic_calc_1": [
+      "sum",
+      "count"
+    ],
+    "dynamic_field_1": "usd_value",
+    "dynamic_groupby_1": "importer_name"
+  },
+  "customerRanking": true,
+  "hideChartByPlan": true,
+  "chart_properties": {
+    "grouping": [
+      "importer_name"
+    ],
+    "aggregation": [
+      "usd_value"
+    ]
+  },
+  "full_list_params": {
+    "enable": true,
+    "hasTextFilter": true,
+    "hasRangeFilter": true,
+    "textFilterParams": {
+      "groupBy": "importer_name",
+      "ruleType": "prefix",
+      "aggregateBy": "usd_value",
+      "placeholder": {
+        "en": "Search for...",
+        "es": "Buscar por...",
+        "pt": "Buscar Por..."
+      },
+      "overrideSize": 100000
+    },
+    "rangeFilterParams": {
+      "title": {
+        "en": "Total of FOB",
+        "es": "Total de FOB",
+        "pt": "Total de FOB"
+      },
+      "groupBy": "importer_name",
+      "ruleType": "range",
+      "aggregateBy": "usd_value",
+      "overrideSize": 100000
+    }
+  },
+  "checkboxSelection": true,
+  "openProfileColumn": "importer_name",
+  "useBackendFilters": true,
+  "displayedItemsSize": 10,
+  "chart_bind_processors": {
+    "full_list_column_4": "includes/end/%",
+    "additional_info_value_2": "includes/end/%",
+    "others_additional_info_value_2": "includes/end/%"
+  },
+  "showNotInformedDocuments": true,
+  "displayedItemsSizePieChart": 10,
+  "showCountsResultPercentage": true,
+  "displayedItemsSizeLineChart": 10
+}

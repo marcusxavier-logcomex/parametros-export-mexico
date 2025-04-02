@@ -1,0 +1,172 @@
+{
+  "color": "#c7ebae",
+  "colors": [
+    "#1FAD67",
+    "#24CFDA",
+    "#7214EB",
+    "#893AEE",
+    "#AA72F2",
+    "#C00BAE",
+    "#F00ED9",
+    "#F99EF0",
+    "#E57400",
+    "#FFA74C"
+  ],
+  "fields": [
+    "usd_value",
+    "hs10",
+    "goods_standart_description_es"
+  ],
+  "group_by": [
+    {
+      "field": "hs10.keyword",
+      "group_by": [
+        {
+          "field": "usd_value",
+          "aggregation": "sum"
+        }
+      ],
+      "aggregation": "terms"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "currency",
+      "showCurrencyCode": false,
+      "showCurrencySign": false,
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "raw_column": "data/hs10__usd_value__raw",
+    "first_column": "data/hs10",
+    "progress_bar": "data/hs10__usd_value__percentage",
+    "tooltip_text": "data/goods_standart_description_es",
+    "footer_column": "translation/others",
+    "others_action": "translation/seeMore",
+    "second_column": "data/goods_standart_description_es",
+    "full_list_column_1": "data/index",
+    "full_list_column_2": "data/hs10",
+    "full_list_column_3": "data/goods_standart_description_es",
+    "full_list_column_4": "data/hs10__usd_value",
+    "full_list_header_1": "translation/position",
+    "full_list_header_2": "translation/title",
+    "full_list_header_3": "translation/header2",
+    "full_list_header_4": "translation/header3",
+    "progress_bar_label": "data/hs10__usd_value",
+    "footer_progress_bar": "summary/remaining/usd_value__count__percentage",
+    "full_list_tooltip_1": "translation/tooltip_1",
+    "footer_column_inner_value": "summary/remaining/count",
+    "footer_progress_bar_label": "summary/remaining/usd_value__sum"
+  },
+  "max_results": 10000,
+  "quickFilter": {
+    "enabled": true,
+    "bindFilter": {
+      "*": "hs10"
+    },
+    "targetValue": "first_column",
+    "translation": {
+      "question_add": {
+        "en": "Would you like to filter by HS CODE [BIND_FIELD_VALUE]?",
+        "es": "¿Le gustaría filtrar por HS CODE [BIND_FIELD_VALUE]?",
+        "pt": "Você gostaria de filtrar por HS CODE [BIND_FIELD_VALUE]?"
+      },
+      "observation_add": {
+        "en": "A new query will be applied",
+        "es": "Se aplicará una nueva consulta",
+        "pt": "Uma nova consulta será aplicada"
+      },
+      "question_remove": {
+        "en": "Would you like to remove the filter by HS CODE [BIND_FIELD_VALUE]?",
+        "es": "¿Le gustaría eliminar el filtro por HS CODE [BIND_FIELD_VALUE]?",
+        "pt": "Você gostaria de remover o filtro por HS CODE [BIND_FIELD_VALUE]?"
+      },
+      "observation_remove": {
+        "en": "A new query will be applied",
+        "es": "Se aplicará una nueva consulta",
+        "pt": "Uma nova consulta será aplicada"
+      }
+    },
+    "dynamicTarget": "full_list_column_2"
+  },
+  "translation": {
+    "title": {
+      "en": "Goods Ranking",
+      "es": "Ranking de Mercancías",
+      "pt": "Ranking de Mercadorias"
+    },
+    "others": {
+      "en": "Others",
+      "es": "Otros",
+      "pt": "Outros"
+    },
+    "header2": {
+      "en": "Description",
+      "es": "Descripción",
+      "pt": "Descrição"
+    },
+    "header3": {
+      "en": "FOB (USD)",
+      "es": "FOB (USD)",
+      "pt": "FOB (USD)"
+    },
+    "seeMore": {
+      "en": "View more",
+      "es": "Ver más",
+      "pt": "Ver mais"
+    },
+    "position": {
+      "en": "Position",
+      "es": "Posición",
+      "pt": "Posição"
+    },
+    "subtitle": {
+      "en": "Imported goods with greater FOB (USD) for your search",
+      "pt": "Mercadorias importadas com maior FOB (USD) para sua pesquisa",
+      "es": "Mercancías importadas con mayor FOB (USD) para su búsqueda"
+    },
+    "tooltip_1": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "cardActionButton": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "goods_standart_description_es.keyword",
+      "aggregation": "terms"
+    }
+  ],
+  "columnsWidth": [
+    10,
+    10,
+    70,
+    10
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_field_1": "usd_value",
+    "dynamic_groupby_1": [
+      "hs10",
+      "goods_standart_description_es"
+    ]
+  },
+  "chart_properties": {
+    "grouping": [
+      "hs10",
+      "goods_standart_description_es"
+    ],
+    "aggregation": [
+      "usd_value"
+    ]
+  },
+  "displayedItemsSize": 10
+}

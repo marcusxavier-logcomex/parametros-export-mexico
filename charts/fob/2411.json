@@ -1,0 +1,53 @@
+{
+  "image": "https://search.logcomex.io/images/dashboard/shipment-weight.svg",
+  "fields": [
+    "gross_weight"
+  ],
+  "group_by": [],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "currency",
+      "showCurrencyCode": false,
+      "showCurrencySign": false,
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "image": "paramsdata/image",
+    "additional_text": "translation/subtitle",
+    "main_text_center": "data/gross_weight__sum",
+    "main_text_prefix": "translation/prefix",
+    "main_text_suffix": "translation/suffix"
+  },
+  "max_results": 0,
+  "translation": {
+    "title": {
+      "en": "Quantity in Weight (Kg)",
+      "es": "Cantidad en Peso (Kg)",
+      "pt": "Quantidade em Peso (Kg)"
+    },
+    "suffix": {
+      "en": "Weight (Kg)",
+      "es": "Peso (Kg)",
+      "pt": "Peso (Kg)"
+    },
+    "subtitle": {
+      "en": "Total quantity of Weight (Kg) imported in this period",
+      "es": "Cantidad total de Peso (Kg) importado en este período",
+      "pt": "Quantidade total de Peso (Kg) importado neste período"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "gross_weight",
+      "show_field": true,
+      "aggregation": "sum"
+    }
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_field_1": "gross_weight"
+  }
+}

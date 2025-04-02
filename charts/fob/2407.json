@@ -1,0 +1,161 @@
+{
+  "fields": [
+    "origin_destination_country",
+    "buyer_seller_country"
+  ],
+  "group_by": [
+    {
+      "field": "origin_destination_country.keyword",
+      "group_by": [
+        {
+          "field": "usd_value",
+          "aggregation": "sum"
+        }
+      ],
+      "aggregation": "terms"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showCurrencyCode": false,
+      "showCurrencySign": false,
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "column_1": "data/percentage",
+    "column_2": "data/buyer_seller_country",
+    "column_3": "data/origin_destination_country",
+    "column_4": "data/count__sum",
+    "footer_1": "summary/remaining/count__sum__percentage",
+    "footer_2": "translation/otherRoutes",
+    "header_1": "translation/header_1",
+    "header_2": "translation/header_2",
+    "header_3": "translation/header_3",
+    "header_4": "translation/header_4",
+    "others_action": "translation/seeMore",
+    "full_list_column_1": "data/index",
+    "full_list_column_2": "data/percentage",
+    "full_list_column_3": "data/buyer_seller_country",
+    "full_list_column_4": "data/origin_destination_country",
+    "full_list_column_5": "data/count__sum",
+    "full_list_header_1": "translation/position",
+    "full_list_header_2": "translation/header_5",
+    "full_list_header_3": "translation/header_2",
+    "full_list_header_4": "translation/header_3",
+    "full_list_header_5": "translation/header_4",
+    "full_list_tooltip_1": "translation/tooltip_1",
+    "column_1_tooltipLabel": "translation/weight",
+    "column_1_tooltipValue": "data/count__sum",
+    "footer_1_tooltipLabel": "translation/footerLabel",
+    "footer_1_tooltipValue": "summary/remaining/count__sum",
+    "full_list_1_tooltipLabel": "translation/footerLabel",
+    "full_list_1_tooltipValue": "summary/remaining/count__sum"
+  },
+  "max_results": 10000,
+  "translation": {
+    "title": {
+      "en": "Origin and Acquisition Country",
+      "es": "Países de Origen y Compra",
+      "pt": "Pais de Origem e Procedência"
+    },
+    "weight": {
+      "en": "FOB (USD): ",
+      "es": "FOB (USD): ",
+      "pt": "FOB (USD): "
+    },
+    "seeMore": {
+      "en": "View more",
+      "es": "Ver más",
+      "pt": "Ver mais"
+    },
+    "header_1": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "header_2": {
+      "en": "Origin Country",
+      "es": "País de Origen",
+      "pt": "País de Origem"
+    },
+    "header_3": {
+      "en": "Acquisition Country",
+      "es": "País de Procedencia",
+      "pt": "País de Procedência"
+    },
+    "header_4": {
+      "en": "FOB (USD)",
+      "es": "FOB (USD)",
+      "pt": "FOB (USD)"
+    },
+    "header_5": {
+      "en": "Percentage",
+      "es": "Porcentaje",
+      "pt": "Porcentagem"
+    },
+    "position": {
+      "en": "Position",
+      "es": "Posición",
+      "pt": "Posição"
+    },
+    "subtitle": {
+      "en": "Routes of country of origin and acquisition with the respective average FOB (USD) value",
+      "es": "Rutas de país de origen y procedencia con el respectivo valor medio de FOB (USD)",
+      "pt": "Rotas de País de origem e procedência com o respectivo valor médio de FOB (USD)"
+    },
+    "tooltip_1": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "footerLabel": {
+      "en": "Total FOB (USD): ",
+      "es": "Total de FOB (USD): ",
+      "pt": "Total de FOB (USD): "
+    },
+    "otherRoutes": {
+      "en": "Other routes",
+      "es": "Otras rutas",
+      "pt": "Outras rotas"
+    },
+    "cardActionButton": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "buyer_seller_country.keyword",
+      "aggregation": "terms"
+    }
+  ],
+  "columnsWidth": [
+    10,
+    10,
+    30,
+    35,
+    15
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": [
+      "sum"
+    ],
+    "dynamic_field_1": "usd_value",
+    "dynamic_groupby_1": [
+      "origin_destination_country",
+      "buyer_seller_country"
+    ]
+  },
+  "showDynamicField": true,
+  "displayedItemsSize": 5,
+  "chart_bind_processors": {
+    "column_1": "includes/end/%",
+    "footer_1": "includes/end/%",
+    "full_list_column_2": "includes/end/%"
+  }
+}

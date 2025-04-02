@@ -1,0 +1,87 @@
+{
+  "rules": {
+    "type": "dateInterval",
+    "field": "interval",
+    "interval": 12,
+    "majorDate": "majorDate",
+    "minorDate": "minorDate",
+    "dataDateFormat": "Y.m",
+    "resultDateFormat": "Y-m-d"
+  },
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE"
+  ],
+  "fields": [
+    "dispatch_date",
+    "usd_value"
+  ],
+  "group_by": [
+    {
+      "field": "usd_value",
+      "aggregation": "sum"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "legend": "data/interval",
+    "legends": "translation/legends",
+    "y_title": "translation/yTitle",
+    "x_position": "data/dispatch_date",
+    "y_position": "data/dispatch_date__usd_value__raw"
+  },
+  "max_results": 0,
+  "translation": {
+    "title": {
+      "en": "Historical Comparison (FOB USD)",
+      "es": "Comparación Histórica (FOB USD)",
+      "pt": "Comparação Histórica (FOB USD)"
+    },
+    "yTitle": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "legends": {
+      "en": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      },
+      "es": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      },
+      "pt": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      }
+    },
+    "subtitle": {
+      "en": "Comparison of imported totals, by month, over the years",
+      "es": "Comparación de totales importados, por mes, a lo largo de los años",
+      "pt": "Comparação dos totais importados, por mês, ao longo dos anos"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "dispatch_date",
+      "interval": "month",
+      "aggregation": "date_histogram"
+    }
+  ],
+  "dateInterval": true,
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_field_1": "usd_value",
+    "dynamic_groupby_1": "dispatch_date"
+  }
+}

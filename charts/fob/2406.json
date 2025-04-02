@@ -1,0 +1,95 @@
+{
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE"
+  ],
+  "fields": [
+    "dispatch_date",
+    "importer_name",
+    "usd_value"
+  ],
+  "group_by": [
+    {
+      "field": "dispatch_date",
+      "group_by": [
+        {
+          "field": "usd_value",
+          "aggregation": "sum"
+        }
+      ],
+      "aggregation": "terms"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "legend": "data/importer_name",
+    "y_title": "translation/yTitle",
+    "x_position": "data/dispatch_date",
+    "y_position": "data/importer_name__count__raw"
+  },
+  "pre_search": {
+    "group_by": [
+      {
+        "field": "usd_value",
+        "aggregation": "sum"
+      }
+    ],
+    "shard_size": 10,
+    "max_results": 10,
+    "aggregate_by": [
+      {
+        "field": "importer_name.keyword",
+        "order_by": {
+          "usd_value": "desc"
+        },
+        "aggregation": "terms"
+      }
+    ]
+  },
+  "shard_size": 10,
+  "max_results": 4,
+  "translation": {
+    "title": {
+      "en": "Top Importers in time",
+      "es": "Ranking de los Importadores en el tiempo",
+      "pt": "Ranking dos Importadores no tempo"
+    },
+    "yTitle": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "subtitle": {
+      "en": "Comparison of FOB (USD) for the researched period",
+      "es": "Comparativo de FOB (USD) para el período de búsqueda",
+      "pt": "Comparativo de FOB (USD) para o período pesquisado"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "importer_name.keyword",
+      "aggregation": "terms"
+    }
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_calc_2": "sum",
+    "dynamic_field_1": "count",
+    "dynamic_field_2": "count",
+    "dynamic_groupby_1": [
+      "dispatch_date",
+      "importer_name"
+    ],
+    "dynamic_groupby_2": "importer_name"
+  },
+  "displayedItemsSize": 4
+}
