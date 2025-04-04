@@ -7,7 +7,7 @@
   ],
   "fields": [
     "dispatch_date",
-    "supplier_name",
+    "buyer_name",
     "gross_weight"
   ],
   "group_by": [
@@ -31,10 +31,10 @@
     }
   ],
   "chart_bind": {
-    "legend": "data/supplier_name",
+    "legend": "data/buyer_name",
     "y_title": "translation/yTitle",
     "x_position": "data/dispatch_date",
-    "y_position": "data/supplier_name__count__raw"
+    "y_position": "data/buyer_name__count__raw"
   },
   "pre_search": {
     "group_by": [
@@ -47,7 +47,7 @@
     "max_results": 10,
     "aggregate_by": [
       {
-        "field": "supplier_name.keyword",
+        "field": "buyer_name.keyword",
         "order_by": {
           "gross_weight": "desc"
         },
@@ -76,7 +76,7 @@
   },
   "aggregate_by": [
     {
-      "field": "supplier_name.keyword",
+      "field": "buyer_name.keyword",
       "aggregation": "terms"
     }
   ],
@@ -87,9 +87,9 @@
     "dynamic_field_2": "count",
     "dynamic_groupby_1": [
       "dispatch_date",
-      "supplier_name"
+      "buyer_name"
     ],
-    "dynamic_groupby_2": "supplier_name"
+    "dynamic_groupby_2": "buyer_name"
   },
   "displayedItemsSize": 4
 }

@@ -12,7 +12,7 @@
     "#FFA74C"
   ],
   "fields": [
-    "supplier_name",
+    "buyer_name",
     "usd_value"
   ],
   "group_by": [
@@ -28,17 +28,17 @@
     "fractionalDigitsLength": 2
   },
   "chart_bind": {
-    "main_label": "data/supplier_name",
-    "progress_bar": "data/supplier_name__usd_value__percentage",
-    "quick_filter": "paramsdata/quickFilter/supplier_name",
+    "main_label": "data/buyer_name",
+    "progress_bar": "data/buyer_name__usd_value__percentage",
+    "quick_filter": "paramsdata/quickFilter/buyer_name",
     "others_action": "translation/seeMore",
-    "column_ranking": "data/supplier_name__ranking",
+    "column_ranking": "data/buyer_name__ranking",
     "others_main_label": "translation/othersMainLabel",
     "others_main_value": "summary/remaining/count",
     "full_list_column_1": "data/index",
-    "full_list_column_2": "data/supplier_name",
-    "full_list_column_3": "data/supplier_name__usd_value",
-    "full_list_column_4": "data/supplier_name__usd_value__percentage",
+    "full_list_column_2": "data/buyer_name",
+    "full_list_column_3": "data/buyer_name__usd_value",
+    "full_list_column_4": "data/buyer_name__usd_value__percentage",
     "full_list_header_1": "translation/header1",
     "full_list_header_2": "translation/header2",
     "full_list_header_3": "translation/header3",
@@ -47,15 +47,15 @@
     "full_list_reorder_3": "reorderFields/aggregation",
     "full_list_tooltip_1": "translation/tooltip_1",
     "full_list_tooltip_4": "translation/tooltip_4",
-    "others_progress_bar": "summary/remaining/supplier_name__usd_value__percentage",
+    "others_progress_bar": "summary/remaining/buyer_name__usd_value__percentage",
     "additional_info_label_1": "translation/firstColumn",
     "additional_info_label_2": "translation/secondColumn",
-    "additional_info_value_1": "data/supplier_name__usd_value",
-    "additional_info_value_2": "data/supplier_name__usd_value__percentage",
+    "additional_info_value_1": "data/buyer_name__usd_value",
+    "additional_info_value_2": "data/buyer_name__usd_value__percentage",
     "others_additional_info_label_1": "translation/firstColumn",
     "others_additional_info_label_2": "translation/secondColumn",
-    "others_additional_info_value_1": "summary/remaining/supplier_name__count",
-    "others_additional_info_value_2": "summary/remaining/supplier_name__usd_value__percentage"
+    "others_additional_info_value_1": "summary/remaining/buyer_name__count",
+    "others_additional_info_value_2": "summary/remaining/buyer_name__usd_value__percentage"
   },
   "shard_size": 10,
   "treatItems": {
@@ -71,12 +71,12 @@
   },
   "max_results": 10000,
   "quickFilter": {
-    "supplier_name": {
+    "buyer_name": {
       "enabled": "true",
       "bindFilter": {
-        "en": "supplier_name",
-        "es": "supplier_name",
-        "pt": "supplier_name"
+        "en": "buyer_name",
+        "es": "buyer_name",
+        "pt": "buyer_name"
       },
       "translation": {
         "question_add": {
@@ -192,7 +192,7 @@
   },
   "aggregate_by": [
     {
-      "field": "supplier_name.keyword",
+      "field": "buyer_name.keyword",
       "order_by": {
         "usd_value": "desc"
       },
@@ -215,13 +215,13 @@
       "count"
     ],
     "dynamic_field_1": "usd_value",
-    "dynamic_groupby_1": "supplier_name"
+    "dynamic_groupby_1": "buyer_name"
   },
   "customerRanking": true,
   "hideChartByPlan": true,
   "chart_properties": {
     "grouping": [
-      "supplier_name"
+      "buyer_name"
     ],
     "aggregation": [
       "usd_value"
@@ -232,7 +232,7 @@
     "hasTextFilter": true,
     "hasRangeFilter": true,
     "textFilterParams": {
-      "groupBy": "supplier_name",
+      "groupBy": "buyer_name",
       "ruleType": "prefix",
       "aggregateBy": "usd_value",
       "placeholder": {
@@ -248,14 +248,14 @@
         "es": "Total de FOB (USD)",
         "pt": "Total de FOB (USD)"
       },
-      "groupBy": "supplier_name",
+      "groupBy": "buyer_name",
       "ruleType": "range",
       "aggregateBy": "usd_value",
       "overrideSize": 100000
     }
   },
   "checkboxSelection": true,
-  "openProfileColumn": "supplier_name",
+  "openProfileColumn": "buyer_name",
   "useBackendFilters": true,
   "displayedItemsSize": 10,
   "chart_bind_processors": {
