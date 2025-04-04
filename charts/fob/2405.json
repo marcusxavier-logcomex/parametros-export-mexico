@@ -1,0 +1,171 @@
+{
+  "showMoreButtonVisible": false,
+  "icons": {
+    "aereo": {
+      "icon": "AirplaneRotateRight",
+      "color": "#5F616A"
+    },
+    "otros": {
+      "icon": "OtherModals",
+      "color": "#5F616A"
+    },
+    "ductos": {
+      "icon": "Duct",
+      "color": "#5F616A"
+    },
+    "outros": {
+      "icon": "OtherModals",
+      "color": "#5F616A"
+    },
+    "others": {
+      "icon": "OtherModals",
+      "color": "#5F616A"
+    },
+    "maritimo": {
+      "icon": "CargoShip",
+      "color": "#5F616A"
+    },
+    "carretero": {
+      "icon": "TruckFast",
+      "color": "#5F616A"
+    },
+    "ferroviario": {
+      "icon": "RailRoad",
+      "color": "#5F616A"
+    }
+  },
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE",
+    "#C99D02"
+  ],
+  "fields": [
+    "usd_value",
+    "entry_exit_transport"
+  ],
+  "group_by": [
+    {
+      "field": "usd_value",
+      "aggregation": "sum"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showFractionalDigits": true,
+      "fractionalDigitsLength": 0
+    }
+  ],
+  "chart_bind": {
+    "sub_label": "data/entry_exit_transport__usd_value__percentage",
+    "main_label": "data/entry_exit_transport",
+    "progress_bar": "data/entry_exit_transport__usd_value__percentage",
+    "remaining_count": "summary/remaining/count",
+    "others_sub_label": "summary/remaining/entry_exit_transport__usd_value__percentage",
+    "second_sub_label": "data/entry_exit_transport__usd_value",
+    "others_main_label": "translation/others",
+    "full_list_column_2": "data/entry_exit_transport",
+    "full_list_header_1": "translation/position",
+    "full_list_header_2": "translation/title",
+    "full_list_tooltip_1": "translation/tooltip_1",
+    "others_progress_bar": "summary/remaining/entry_exit_transport__usd_value__percentage",
+    "others_second_sub_label": "summary/remaining/entry_exit_transport__usd_value"
+  },
+  "max_results": 10000,
+  "quickFilter": {
+    "enabled": true,
+    "bindFilter": {
+      "*": "entry_exit_transport"
+    },
+    "targetValue": "main_label",
+    "translation": {
+      "question_add": {
+        "en": "Would you like to filter by Transport Mode [BIND_FIELD_VALUE]?",
+        "es": "¿Te gustaría filtrar por Medio de Transporte [BIND_FIELD_VALUE]?",
+        "pt": "Você gostaria de filtrar por Modal [BIND_FIELD_VALUE]?"
+      },
+      "observation_add": {
+        "en": "A new query will be applied",
+        "es": "Se aplicará una nueva consulta",
+        "pt": "Uma nova consulta será aplicada"
+      },
+      "question_remove": {
+        "en": "Would you like to remove the filter by Transport Mode [BIND_FIELD_VALUE]?",
+        "es": "¿Te gustaría eliminar el filtro por Medio de Transporte [BIND_FIELD_VALUE]?",
+        "pt": "Você gostaria de remover o filtro por Modal [BIND_FIELD_VALUE]?"
+      },
+      "observation_remove": {
+        "en": "A new query will be applied",
+        "es": "Se aplicará una nueva consulta",
+        "pt": "Uma nova consulta será aplicada"
+      }
+    },
+    "ignoreValues": [
+      "OUTROS",
+      "OTHERS",
+      "OTROS"
+    ],
+    "dynamicTarget": null
+  },
+  "translation": {
+    "aereo": {
+      "en": "avion",
+      "pt": "avion",
+      "es": "avion"
+    },
+    "title": {
+      "en": "Transport Mode",
+      "pt": "Modais",
+      "es": "Medio de Transporte"
+    },
+    "others": {
+      "en": "OTHERS",
+      "pt": "OUTROS",
+      "es": "OTROS"
+    },
+    "maritimo": {
+      "en": "acuatico",
+      "pt": "acuatico",
+      "es": "acuatico"
+    },
+    "position": {
+      "en": "Position",
+      "pt": "Posição",
+      "es": "Posición"
+    },
+    "subtitle": {
+      "en": "Distribution of FOB (USD) by the last transport mode declared in dispatch customs",
+      "pt": "Distribuição do FOB (USD) pelo último modal de transporte declarado na aduana de despacho",
+      "es": "Distribución del FOB (USD) por último medio de transporte declarado en la aduana de despacho"
+    },
+    "carretero": {
+      "en": "camion",
+      "pt": "camion",
+      "es": "camion"
+    },
+    "tooltip_1": {
+      "en": "Regarding the applied filter",
+      "pt": "Em relação ao filtro aplicado",
+      "es": "Con respecto al filtro aplicado"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "entry_exit_transport.keyword",
+      "aggregation": "terms"
+    }
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_field_1": "usd_value",
+    "dynamic_groupby_1": "entry_exit_transport"
+  },
+  "displayedItemsSize": 4,
+  "chart_bind_processors": {
+    "sub_label": "includes/end/%",
+    "others_sub_label": "includes/end/%"
+  }
+}
