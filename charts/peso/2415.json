@@ -12,7 +12,7 @@
     "#FFA74C"
   ],
   "fields": [
-    "importer_name",
+    "exporter_name",
     "gross_weight"
   ],
   "group_by": [
@@ -28,17 +28,17 @@
     "fractionalDigitsLength": 2
   },
   "chart_bind": {
-    "main_label": "data/importer_name",
-    "progress_bar": "data/importer_name__gross_weight__percentage",
-    "quick_filter": "paramsdata/quickFilter/importer_name",
+    "main_label": "data/exporter_name",
+    "progress_bar": "data/exporter_name__gross_weight__percentage",
+    "quick_filter": "paramsdata/quickFilter/exporter_name",
     "others_action": "translation/seeMore",
-    "column_ranking": "data/importer_name__ranking",
+    "column_ranking": "data/exporter_name__ranking",
     "others_main_label": "translation/othersMainLabel",
     "others_main_value": "summary/remaining/count",
     "full_list_column_1": "data/index",
-    "full_list_column_2": "data/importer_name",
-    "full_list_column_3": "data/importer_name__gross_weight",
-    "full_list_column_4": "data/importer_name__gross_weight__percentage",
+    "full_list_column_2": "data/exporter_name",
+    "full_list_column_3": "data/exporter_name__gross_weight",
+    "full_list_column_4": "data/exporter_name__gross_weight__percentage",
     "full_list_header_1": "translation/header1",
     "full_list_header_2": "translation/header2",
     "full_list_header_3": "translation/header3",
@@ -47,15 +47,15 @@
     "full_list_reorder_3": "reorderFields/aggregation",
     "full_list_tooltip_1": "translation/tooltip_1",
     "full_list_tooltip_4": "translation/tooltip_4",
-    "others_progress_bar": "summary/remaining/importer_name__gross_weight__percentage",
+    "others_progress_bar": "summary/remaining/exporter_name__gross_weight__percentage",
     "additional_info_label_1": "translation/firstColumn",
     "additional_info_label_2": "translation/secondColumn",
-    "additional_info_value_1": "data/importer_name__gross_weight",
-    "additional_info_value_2": "data/importer_name__gross_weight__percentage",
+    "additional_info_value_1": "data/exporter_name__gross_weight",
+    "additional_info_value_2": "data/exporter_name__gross_weight__percentage",
     "others_additional_info_label_1": "translation/firstColumn",
     "others_additional_info_label_2": "translation/secondColumn",
-    "others_additional_info_value_1": "summary/remaining/importer_name__count",
-    "others_additional_info_value_2": "summary/remaining/importer_name__gross_weight__percentage"
+    "others_additional_info_value_1": "summary/remaining/exporter_name__count",
+    "others_additional_info_value_2": "summary/remaining/exporter_name__gross_weight__percentage"
   },
   "shard_size": 10,
   "treatItems": {
@@ -71,18 +71,18 @@
   },
   "max_results": 10000,
   "quickFilter": {
-    "importer_name": {
+    "exporter_name": {
       "enabled": "true",
       "bindFilter": {
-        "en": "importer_name",
-        "es": "importer_name",
-        "pt": "importer_name"
+        "en": "exporter_name",
+        "es": "exporter_name",
+        "pt": "exporter_name"
       },
       "translation": {
         "question_add": {
           "en": "Would you like to filter by importer [BIND_FIELD_VALUE]?",
-          "es": "¿Le gustaría filtrar por el importer_name [BIND_FIELD_VALUE]?",
-          "pt": "Você gostaria de filtrar pelo importer_name [BIND_FIELD_VALUE]?"
+          "es": "¿Le gustaría filtrar por el exporter_name [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de filtrar pelo exporter_name [BIND_FIELD_VALUE]?"
         },
         "observation_add": {
           "en": "A new query will be applied",
@@ -91,8 +91,8 @@
         },
         "question_remove": {
           "en": "Would you like to remove the filter by importer [BIND_FIELD_VALUE]?",
-          "es": "¿Le gustaría eliminar el filtro por el importer_name [BIND_FIELD_VALUE]?",
-          "pt": "Você gostaria de remover o filtro pelo importer_name [BIND_FIELD_VALUE]?"
+          "es": "¿Le gustaría eliminar el filtro por el exporter_name [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de remover o filtro pelo exporter_name [BIND_FIELD_VALUE]?"
         },
         "observation_remove": {
           "en": "A new query will be applied",
@@ -192,7 +192,7 @@
   },
   "aggregate_by": [
     {
-      "field": "importer_name.keyword",
+      "field": "exporter_name.keyword",
       "order_by": {
         "gross_weight": "desc"
       },
@@ -215,13 +215,13 @@
       "count"
     ],
     "dynamic_field_1": "gross_weight",
-    "dynamic_groupby_1": "importer_name"
+    "dynamic_groupby_1": "exporter_name"
   },
   "customerRanking": true,
   "hideChartByPlan": true,
   "chart_properties": {
     "grouping": [
-      "importer_name"
+      "exporter_name"
     ],
     "aggregation": [
       "gross_weight"
@@ -232,7 +232,7 @@
     "hasTextFilter": true,
     "hasRangeFilter": true,
     "textFilterParams": {
-      "groupBy": "importer_name",
+      "groupBy": "exporter_name",
       "ruleType": "prefix",
       "aggregateBy": "gross_weight",
       "placeholder": {
@@ -248,14 +248,14 @@
         "es": "Total de TEUS",
         "pt": "Total de TEUS"
       },
-      "groupBy": "importer_name",
+      "groupBy": "exporter_name",
       "ruleType": "range",
       "aggregateBy": "gross_weight",
       "overrideSize": 100000
     }
   },
   "checkboxSelection": true,
-  "openProfileColumn": "importer_name",
+  "openProfileColumn": "exporter_name",
   "useBackendFilters": true,
   "displayedItemsSize": 10,
   "chart_bind_processors": {

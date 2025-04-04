@@ -7,7 +7,7 @@
   ],
   "fields": [
     "dispatch_date",
-    "importer_name",
+    "exporter_name",
     "usd_value"
   ],
   "group_by": [
@@ -31,10 +31,10 @@
     }
   ],
   "chart_bind": {
-    "legend": "data/importer_name",
+    "legend": "data/exporter_name",
     "y_title": "translation/yTitle",
     "x_position": "data/dispatch_date",
-    "y_position": "data/importer_name__count__raw"
+    "y_position": "data/exporter_name__count__raw"
   },
   "pre_search": {
     "group_by": [
@@ -47,7 +47,7 @@
     "max_results": 10,
     "aggregate_by": [
       {
-        "field": "importer_name.keyword",
+        "field": "exporter_name.keyword",
         "order_by": {
           "usd_value": "desc"
         },
@@ -76,7 +76,7 @@
   },
   "aggregate_by": [
     {
-      "field": "importer_name.keyword",
+      "field": "exporter_name.keyword",
       "aggregation": "terms"
     }
   ],
@@ -87,9 +87,9 @@
     "dynamic_field_2": "count",
     "dynamic_groupby_1": [
       "dispatch_date",
-      "importer_name"
+      "exporter_name"
     ],
-    "dynamic_groupby_2": "importer_name"
+    "dynamic_groupby_2": "exporter_name"
   },
   "displayedItemsSize": 4
 }
