@@ -161,7 +161,7 @@
       "expanded": false,
       "fields": [
         {
-          "dataset_bind": "importer_name",
+          "dataset_bind": "buyer_name",
           "uppercase_value": true,
           "rule": "contains",
           "rule_type": "prefix",
@@ -182,7 +182,7 @@
       "expanded": false,
       "fields": [
         {
-          "dataset_bind": "importer_id",
+          "dataset_bind": "exporter_id",
           "uppercase_value": true,
           "rule": "contains",
           "rule_type": "prefix",
@@ -203,7 +203,7 @@
       "expanded": false,
       "fields": [
         {
-          "dataset_bind": "supplier_name",
+          "dataset_bind": "exporter_name",
           "uppercase_value": true,
           "rule": "contains",
           "rule_type": "prefix",
@@ -266,7 +266,7 @@
       "expanded": false,
       "fields": [
         {
-          "dataset_bind": "buyer_seller_country",
+          "dataset_bind": "exporter_country",
           "uppercase_value": true,
           "rule": "contains",
           "rule_type": "prefix",
