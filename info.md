@@ -55,3 +55,9 @@ antes:
 2116	Ranking dos Prováveis Importadores no tempo
 2286	Modal
 
+## Gráficos que trocaram de campo
+### impoter_name -> exporter_name
+2406, 2412, 2415, 2421
+
+### supplier_name -> buyer_name
+2408, 2413, 2416, 2417
