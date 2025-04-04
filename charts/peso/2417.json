@@ -1,0 +1,95 @@
+{
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE"
+  ],
+  "fields": [
+    "dispatch_date",
+    "supplier_name",
+    "gross_weight"
+  ],
+  "group_by": [
+    {
+      "field": "dispatch_date",
+      "group_by": [
+        {
+          "field": "gross_weight",
+          "aggregation": "sum"
+        }
+      ],
+      "aggregation": "terms"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "legend": "data/supplier_name",
+    "y_title": "translation/yTitle",
+    "x_position": "data/dispatch_date",
+    "y_position": "data/supplier_name__count__raw"
+  },
+  "pre_search": {
+    "group_by": [
+      {
+        "field": "gross_weight",
+        "aggregation": "sum"
+      }
+    ],
+    "shard_size": 10,
+    "max_results": 10,
+    "aggregate_by": [
+      {
+        "field": "supplier_name.keyword",
+        "order_by": {
+          "gross_weight": "desc"
+        },
+        "aggregation": "terms"
+      }
+    ]
+  },
+  "shard_size": 10,
+  "max_results": 4,
+  "translation": {
+    "title": {
+      "en": "Top Shippers in time",
+      "es": "Ranking de los Exportadores en el tiempo",
+      "pt": "Ranking dos Exportadores no tempo"
+    },
+    "yTitle": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "subtitle": {
+      "en": "Comparison of weight (kg) exported for the researched period",
+      "es": "Comparativo de peso (Kg) exportados para el período de búsqueda",
+      "pt": "Comparativo de peso (Kg) exportados para o período pesquisado"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "supplier_name.keyword",
+      "aggregation": "terms"
+    }
+  ],
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_calc_2": "sum",
+    "dynamic_field_1": "count",
+    "dynamic_field_2": "count",
+    "dynamic_groupby_1": [
+      "dispatch_date",
+      "supplier_name"
+    ],
+    "dynamic_groupby_2": "supplier_name"
+  },
+  "displayedItemsSize": 4
+}

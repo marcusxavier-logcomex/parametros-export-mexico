@@ -1,0 +1,87 @@
+{
+  "rules": {
+    "type": "dateInterval",
+    "field": "interval",
+    "interval": 12,
+    "majorDate": "majorDate",
+    "minorDate": "minorDate",
+    "dataDateFormat": "Y.m",
+    "resultDateFormat": "Y-m-d"
+  },
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE"
+  ],
+  "fields": [
+    "dispatch_date",
+    "gross_weight"
+  ],
+  "group_by": [
+    {
+      "field": "gross_weight",
+      "aggregation": "sum"
+    }
+  ],
+  "per_page": 100,
+  "formatter": [
+    {
+      "type": "quantity",
+      "showFractionalDigits": false,
+      "fractionalDigitsLength": 2
+    }
+  ],
+  "chart_bind": {
+    "legend": "data/interval",
+    "legends": "translation/legends",
+    "y_title": "translation/yTitle",
+    "x_position": "data/dispatch_date",
+    "y_position": "data/dispatch_date__gross_weight__raw"
+  },
+  "max_results": 0,
+  "translation": {
+    "title": {
+      "en": "Historical Comparison (Weight Kg)",
+      "es": "Comparación Histórica (Peso Kg)",
+      "pt": "Comparação Histórica (Peso Kg)"
+    },
+    "yTitle": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "legends": {
+      "en": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      },
+      "es": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      },
+      "pt": {
+        "majorDate": "2024",
+        "minorDate": "2023"
+      }
+    },
+    "subtitle": {
+      "en": "Year to Date comparison of total weight imported in the period surveyed",
+      "es": "Comparación Year to Date del peso total importado en el período analizado",
+      "pt": "Comparação Year to Date da quantidade de peso importado no período pesquisado"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "dispatch_date",
+      "interval": "month",
+      "aggregation": "date_histogram"
+    }
+  ],
+  "dateInterval": true,
+  "torettoFields": {
+    "dynamic_calc_1": "sum",
+    "dynamic_field_1": "gross_weight",
+    "dynamic_groupby_1": "dispatch_date"
+  }
+}

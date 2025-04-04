@@ -1,0 +1,270 @@
+{
+  "colors": [
+    "#1FAD67",
+    "#7CE2E8",
+    "#440C8C",
+    "#893AEE",
+    "#C6A1F6",
+    "#C00BAE",
+    "#F00ED9",
+    "#F99EF0",
+    "#E57400",
+    "#FFA74C"
+  ],
+  "fields": [
+    "supplier_name",
+    "gross_weight"
+  ],
+  "group_by": [
+    {
+      "field": "gross_weight",
+      "aggregation": "sum"
+    }
+  ],
+  "per_page": 100,
+  "formatter": {
+    "type": "currency",
+    "showFractionalDigits": false,
+    "fractionalDigitsLength": 2
+  },
+  "chart_bind": {
+    "main_label": "data/supplier_name",
+    "progress_bar": "data/supplier_name__gross_weight__percentage",
+    "quick_filter": "paramsdata/quickFilter/supplier_name",
+    "others_action": "translation/seeMore",
+    "column_ranking": "data/supplier_name__ranking",
+    "others_main_label": "translation/othersMainLabel",
+    "others_main_value": "summary/remaining/count",
+    "full_list_column_1": "data/index",
+    "full_list_column_2": "data/supplier_name",
+    "full_list_column_3": "data/supplier_name__gross_weight",
+    "full_list_column_4": "data/supplier_name__gross_weight__percentage",
+    "full_list_header_1": "translation/header1",
+    "full_list_header_2": "translation/header2",
+    "full_list_header_3": "translation/header3",
+    "full_list_header_4": "translation/header4",
+    "full_list_reorder_2": "reorderFields/field",
+    "full_list_reorder_3": "reorderFields/aggregation",
+    "full_list_tooltip_1": "translation/tooltip_1",
+    "full_list_tooltip_4": "translation/tooltip_4",
+    "others_progress_bar": "summary/remaining/supplier_name__gross_weight__percentage",
+    "additional_info_label_1": "translation/firstColumn",
+    "additional_info_label_2": "translation/secondColumn",
+    "additional_info_value_1": "data/supplier_name__gross_weight",
+    "additional_info_value_2": "data/supplier_name__gross_weight__percentage",
+    "others_additional_info_label_1": "translation/firstColumn",
+    "others_additional_info_label_2": "translation/secondColumn",
+    "others_additional_info_value_1": "summary/remaining/supplier_name__count",
+    "others_additional_info_value_2": "summary/remaining/supplier_name__gross_weight__percentage"
+  },
+  "shard_size": 10,
+  "max_results": 10000,
+  "quickFilter": {
+    "supplier_name": {
+      "enabled": "true",
+      "bindFilter": {
+        "en": "supplier_name",
+        "es": "supplier_name",
+        "pt": "supplier_name"
+      },
+      "translation": {
+        "question_add": {
+          "en": "Would you like to filter by possible importer [BIND_FIELD_VALUE]?",
+          "es": "¿Le gustaría filtrar por el posible supplier_name [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de filtrar pelo provável supplier_name [BIND_FIELD_VALUE]?"
+        },
+        "observation_add": {
+          "en": "A new query will be applied",
+          "es": "Se aplicará una nueva consulta",
+          "pt": "Uma nova consulta será aplicada"
+        },
+        "question_remove": {
+          "en": "Would you like to remove the filter by possible shipper [BIND_FIELD_VALUE]?",
+          "es": "¿Le gustaría eliminar el filtro por el posible exportador [BIND_FIELD_VALUE]?",
+          "pt": "Você gostaria de remover o filtro pelo provável exportador [BIND_FIELD_VALUE]?"
+        },
+        "observation_remove": {
+          "en": "A new query will be applied",
+          "es": "Se aplicará una nueva consulta",
+          "pt": "Uma nova consulta será aplicada"
+        }
+      },
+      "dynamicTarget": "full_list_column_2"
+    }
+  },
+  "translation": {
+    "title": {
+      "en": "Top Probable Shippers",
+      "es": "Ranking de Probables Exportadores",
+      "pt": "Ranking dos Prováveis Exportadores"
+    },
+    "value": {
+      "en": "Weight (KG)",
+      "es": "Peso (KG)",
+      "pt": "Peso (KG)"
+    },
+    "others": {
+      "en": "OTHERS",
+      "es": "OTROS",
+      "pt": "OUTROS"
+    },
+    "header1": {
+      "en": "Position",
+      "es": "Posición",
+      "pt": "Posição"
+    },
+    "header2": {
+      "en": "Companies",
+      "es": "Empresas",
+      "pt": "Empresas"
+    },
+    "header3": {
+      "en": "Weight (KG)",
+      "es": "Peso (KG)",
+      "pt": "Peso (KG)"
+    },
+    "header4": {
+      "en": "Weight Share",
+      "es": "Participación de Peso",
+      "pt": "Share de Peso"
+    },
+    "records": {
+      "en": "Weight Share",
+      "es": "Participación de Peso",
+      "pt": "Share de Peso"
+    },
+    "seeMore": {
+      "en": "View more",
+      "es": "Ver más",
+      "pt": "Ver mais"
+    },
+    "subtitle": {
+      "en": "Probable shippers with the highest number of weight (kg) exported for your research",
+      "es": "Probables Exportadores con mayor número de peso (Kg) exportados para su investigación",
+      "pt": "Prováveis Exportadores com maior número de peso (Kg) exportados para sua pesquisa"
+    },
+    "tooltip_1": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "tooltip_4": {
+      "en": "Regarding the applied filter",
+      "es": "Respecto al filtro aplicado",
+      "pt": "Em relação ao filtro aplicado"
+    },
+    "firstColumn": {
+      "en": "Weight: ",
+      "es": "Peso: ",
+      "pt": "Peso: "
+    },
+    "othersAction": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    },
+    "secondColumn": {
+      "en": "Weight Share: ",
+      "es": "Participación de Peso: ",
+      "pt": "Share de Peso: "
+    },
+    "othersMainLabel": {
+      "en": "Others",
+      "es": "Otros",
+      "pt": "Outros"
+    },
+    "cardActionButton": {
+      "en": "Hide",
+      "es": "Ocultar",
+      "pt": "Recolher"
+    }
+  },
+  "aggregate_by": [
+    {
+      "field": "supplier_name.keyword",
+      "order_by": {
+        "gross_weight": "desc"
+      },
+      "aggregation": "terms"
+    }
+  ],
+  "columnsWidth": [
+    15,
+    45,
+    20,
+    20
+  ],
+  "reorderFields": {
+    "field": "fieldName",
+    "aggregation": "__sort"
+  },
+  "torettoFields": {
+    "dynamic_calc_1": [
+      "sum",
+      "count"
+    ],
+    "dynamic_field_1": "gross_weight",
+    "dynamic_groupby_1": "supplier_name"
+  },
+  "customerRanking": true,
+  "hideChartByPlan": true,
+  "chart_properties": {
+    "grouping": [
+      "supplier_name"
+    ],
+    "aggregation": [
+      "gross_weight"
+    ]
+  },
+  "full_list_params": {
+    "enable": true,
+    "hasTextFilter": true,
+    "hasRangeFilter": true,
+    "textFilterParams": {
+      "groupBy": "supplier_name",
+      "ruleType": "prefix",
+      "aggregateBy": "gross_weight",
+      "placeholder": {
+        "en": "Search for...",
+        "es": "Buscar por...",
+        "pt": "Buscar Por..."
+      },
+      "overrideSize": 100000
+    },
+    "rangeFilterParams": {
+      "title": {
+        "en": "Total of TEUS",
+        "es": "Total de TEUS",
+        "pt": "Total de TEUS"
+      },
+      "groupBy": "supplier_name",
+      "ruleType": "range",
+      "aggregateBy": "gross_weight",
+      "overrideSize": 100000
+    }
+  },
+  "checkboxSelection": true,
+  "openProfileColumn": "supplier_name",
+  "useBackendFilters": true,
+  "displayedItemsSize": 10,
+  "chart_bind_processors": {
+    "full_list_column_4": "includes/end/%",
+    "additional_info_value_2": "includes/end/%",
+    "others_additional_info_value_2": "includes/end/%"
+  },
+  "showNotInformedDocuments": true,
+  "displayedItemsSizePieChart": 10,
+  "showCountsResultPercentage": true,
+  "displayedItemsSizeLineChart": 10,
+  "treatItems": {
+    "moveToEnd": [
+      "NO INFORMADO"
+    ],
+    "hideProgressLine": [
+      "NO INFORMADO"
+    ],
+    "hideShare": [
+      "NO INFORMADO"
+    ]
+  }
+}
