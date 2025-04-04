@@ -3,53 +3,61 @@
 ## ID das layers
 ### FOB
 layer fob export:
-2414	Valor Total FOB Importado no Período
-2413	Ranking Exportadores
-2412	Ranking dos Importadores
-2411	Quantidade em Peso (Kg)
-2410	Quantidade total de FOB (USD)
-2409	Ranking de Mercadorias
-2408	Ranking dos Exportadores no tempo
-2407	Pais de Origem e Procedência
-2406	Ranking dos Importadores no tempo
-2405	Modal
+| ID | Descrição |
+|------|-----------|
+| 2414 | Valor Total FOB Importado no Período |
+| 2413 | Ranking Exportadores |
+| 2412 | Ranking dos Importadores |
+| 2411 | Quantidade em Peso (Kg) |
+| 2410 | Quantidade total de FOB (USD) |
+| 2409 | Ranking de Mercadorias |
+| 2408 | Ranking dos Exportadores no tempo |
+| 2407 | Pais de Origem e Procedência |
+| 2406 | Ranking dos Importadores no tempo |
+| 2405 | Modal |
 
 antes:
-2111	Valor Total FOB Importado no Período
-2315	Ranking Exportadores
-2314	Ranking dos Importadores
-2112	Quantidade em Peso (Kg)
-2388	Quantidade total de FOB (USD)
-2399	Ranking de Mercadorias
-2317	Ranking dos Exportadores no tempo
-2403	Pais de Origem e Procedência
-2316	Ranking dos Importadores no tempo
-2386	Modal
+| ID | Descrição |
+|------|-----------|
+| 2111 | Valor Total FOB Importado no Período |
+| 2315 | Ranking Exportadores |
+| 2314 | Ranking dos Importadores |
+| 2112 | Quantidade em Peso (Kg) |
+| 2388 | Quantidade total de FOB (USD) |
+| 2399 | Ranking de Mercadorias |
+| 2317 | Ranking dos Exportadores no tempo |
+| 2403 | Pais de Origem e Procedência |
+| 2316 | Ranking dos Importadores no tempo |
+| 2386 | Modal |
 
 ### Peso
 layer peso export:
-2410	Quantidade total de FOB (USD)
-2411	Quantidade em Peso (Kg)
-2415	Ranking dos Prováveis Importadores
-2416	Ranking dos Prováveis Exportadores
-2417	Ranking dos Prováveis Exportadores no tempo
-2418	Pais de Origem e Procedência
-2419	Quantidade total de Peso (Kg)
-2420	Ranking de Mercadorias
-2421	Ranking dos Prováveis Importadores no tempo
-2422	Modal
+| ID | Descrição |
+|------|-----------|
+| 2410 | Quantidade total de FOB (USD) |
+| 2411 | Quantidade em Peso (Kg) |
+| 2415 | Ranking dos Prováveis Importadores |
+| 2416 | Ranking dos Prováveis Exportadores |
+| 2417 | Ranking dos Prováveis Exportadores no tempo |
+| 2418 | Pais de Origem e Procedência |
+| 2419 | Quantidade total de Peso (Kg) |
+| 2420 | Ranking de Mercadorias |
+| 2421 | Ranking dos Prováveis Importadores no tempo |
+| 2422 | Modal |
 
 antes:
-2112	Quantidade em Peso (Kg)
-2111	Valor Total FOB Importado no Período
-2114	Ranking dos Prováveis Importadores
-2115	Ranking dos Prováveis Exportadores
-2117	Ranking dos Prováveis Exportadores no tempo
-2404	Pais de Origem e Procedência
-2387	Quantidade total de Peso (Kg)
-2299	Ranking de Mercadorias
-2116	Ranking dos Prováveis Importadores no tempo
-2286	Modal
+| ID | Descrição |
+|------|-----------|
+| 2112 | Quantidade em Peso (Kg) |
+| 2111 | Valor Total FOB Importado no Período |
+| 2114 | Ranking dos Prováveis Importadores |
+| 2115 | Ranking dos Prováveis Exportadores |
+| 2117 | Ranking dos Prováveis Exportadores no tempo |
+| 2404 | Pais de Origem e Procedência |
+| 2387 | Quantidade total de Peso (Kg) |
+| 2299 | Ranking de Mercadorias |
+| 2116 | Ranking dos Prováveis Importadores no tempo |
+| 2286 | Modal |
 
 ## Gráficos que trocaram de campo
 ### impoter_name -> exporter_name
