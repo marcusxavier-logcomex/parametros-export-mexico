@@ -1,8 +1,4 @@
-## Comando no vim pra substituir os ids da layer de peso
-%s/2114/2415/g | %s/2115/2416/g | %s/2117/2417/g | %s/2404/2418/g | %s/2387/2419/g | %s/2299/2420/g | %s/2116/2421/g | %s/2286/2422/g | %s/2111/2414/g | %s/2112/2411/g
-
-## Comando no vim pra substituis os ids da layer de FOB
-%s/2111/2414/g | %s/2315/2413/g | %s/2314/2412/g | %s/2112/2411/g | %s/2388/2410/g | %s/2399/2409/g | %s/2317/2408/g | %s/2403/2407/g | %s/2316/2406/g | %s/2386/2405/g
+# Informações sobre as parametrizações
 
 ## ID das layers
 ### FOB
@@ -64,3 +60,9 @@ antes:
 
 ### arrival_transport -> entry_exit_transport
 2406, 2422
+
+#### Comando no vim pra substituir os ids da layer de peso
+%s/2114/2415/g | %s/2115/2416/g | %s/2117/2417/g | %s/2404/2418/g | %s/2387/2419/g | %s/2299/2420/g | %s/2116/2421/g | %s/2286/2422/g | %s/2111/2414/g | %s/2112/2411/g
+
+#### Comando no vim pra substituis os ids da layer de FOB
+%s/2111/2414/g | %s/2315/2413/g | %s/2314/2412/g | %s/2112/2411/g | %s/2388/2410/g | %s/2399/2409/g | %s/2317/2408/g | %s/2403/2407/g | %s/2316/2406/g | %s/2386/2405/g
