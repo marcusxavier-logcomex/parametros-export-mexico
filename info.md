@@ -61,3 +61,6 @@ antes:
 
 ### supplier_name -> buyer_name
 2408, 2413, 2416, 2417
+
+### arrival_transport -> entry_exit_transport
+2406, 2422
