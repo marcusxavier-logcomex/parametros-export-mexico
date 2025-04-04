@@ -43,7 +43,7 @@
   ],
   "fields": [
     "gross_weight",
-    "arrival_transport"
+    "entry_exit_transport"
   ],
   "group_by": [
     {
@@ -60,25 +60,25 @@
     }
   ],
   "chart_bind": {
-    "sub_label": "data/arrival_transport__gross_weight__percentage",
-    "main_label": "data/arrival_transport",
-    "progress_bar": "data/arrival_transport__gross_weight__percentage",
+    "sub_label": "data/entry_exit_transport__gross_weight__percentage",
+    "main_label": "data/entry_exit_transport",
+    "progress_bar": "data/entry_exit_transport__gross_weight__percentage",
     "remaining_count": "summary/remaining/count",
-    "others_sub_label": "summary/remaining/arrival_transport__gross_weight__percentage",
-    "second_sub_label": "data/arrival_transport__gross_weight",
+    "others_sub_label": "summary/remaining/entry_exit_transport__gross_weight__percentage",
+    "second_sub_label": "data/entry_exit_transport__gross_weight",
     "others_main_label": "translation/others",
-    "full_list_column_2": "data/arrival_transport",
+    "full_list_column_2": "data/entry_exit_transport",
     "full_list_header_1": "translation/position",
     "full_list_header_2": "translation/title",
     "full_list_tooltip_1": "translation/tooltip_1",
-    "others_progress_bar": "summary/remaining/arrival_transport__gross_weight__percentage",
-    "others_second_sub_label": "summary/remaining/arrival_transport__gross_weight"
+    "others_progress_bar": "summary/remaining/entry_exit_transport__gross_weight__percentage",
+    "others_second_sub_label": "summary/remaining/entry_exit_transport__gross_weight"
   },
   "max_results": 10000,
   "quickFilter": {
     "enabled": true,
     "bindFilter": {
-      "*": "arrival_transport"
+      "*": "entry_exit_transport"
     },
     "targetValue": "main_label",
     "translation": {
@@ -154,14 +154,14 @@
   },
   "aggregate_by": [
     {
-      "field": "arrival_transport.keyword",
+      "field": "entry_exit_transport.keyword",
       "aggregation": "terms"
     }
   ],
   "torettoFields": {
     "dynamic_calc_1": "sum",
     "dynamic_field_1": "gross_weight",
-    "dynamic_groupby_1": "arrival_transport"
+    "dynamic_groupby_1": "entry_exit_transport"
   },
   "displayedItemsSize": 4,
   "chart_bind_processors": {
